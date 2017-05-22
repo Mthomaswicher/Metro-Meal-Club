@@ -1,0 +1,414 @@
+/*Video Background*/
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+body{
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+
+
+
+/*Clearfix*/
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*Splash Page*/
+
+.maintitle{
+    font-size: 60px;
+    font-weight: 800;
+    padding:0;
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    color: darksalmon;
+}
+
+/*Check Us Out Button - Splash Page*/
+
+.myButton {
+    -moz-box-shadow: 0px 1px 0px 0px #fff6af;
+    -webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+    background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+    background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+    background-color:#ffec64;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #009445;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 68px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+    background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+    background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+    background-color:#ffab23;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+.headline{
+
+    padding-bottom: 30px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Rokkitt', serif;
+}
+
+
+.logo{
+
+    width: 20%;
+}
+
+
+a{
+    display: block;
+}
+
+
+ .column
+ {
+    width:33%;
+  padding:5px;
+  float:left;
+  box-sizing:border-box;
+}
+
+/*About Page*/
+
+.slick-slide img{
+  width: 100%;
+}
+
+.about{
+  padding-top: 0;
+}
+
+.aboutpage{
+  background-color: black;
+}
+
+#headerabout{  font-family: 'Lobster', cursive;
+  color: aqua;
+  margin-bottom: : 15px;
+  font-size: 40px;
+}
+
+.columnheader{
+  color: deeppink;
+  font-family: 'Lobster', cursive;
+  margin: 0;
+}
+
+.aboutlogo{
+  width: 20%;
+
+  display:
+}
+
+.newsletter{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 25%;
+}
+
+.readmore{
+  font-family: 'Josefin Slab', serif;
+  font-weight: 300;
+  color: honeydew;
+}
+
+/*Hidden Divs*/
+
+#slidedown1{
+  font-family: 'Josefin Slab', serif;
+  display: none;
+  color: honeydew;
+}
+
+#slidedown2{
+  font-family: 'Josefin Slab', serif;
+  display: none;
+  color: honeydew;
+}
+
+#slidedown3{
+  font-family: 'Josefin Slab', serif;
+  display: none;
+  color: honeydew;
+}
+
+
+
+/*Button on About Page*/
+
+.myButton2 {
+	-moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+	background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef', endColorstr='#019ad2',GradientType=0);
+	background-color:#33bdef;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:yellow;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:14px 48px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+  margin-top: 20px;
+}
+.myButton2:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #019ad2), color-stop(1, #33bdef));
+	background:-moz-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-webkit-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-o-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:-ms-linear-gradient(top, #019ad2 5%, #33bdef 100%);
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2', endColorstr='#33bdef',GradientType=0);
+	background-color:#019ad2;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+/*Footer Logos*/
+
+.sociallogo{
+  	height:50px;
+  	width:auto
+  		}
+}
+
+
+.autoplay {
+  width: 80%;
+  margin: auto;
+}
+
+.slick-slider  {
+  width: 800px;
+  margin: auto;
+  margin-top: -20px;
+  margin-bottom: -60px;
+}
+
+footer ul li{
+  display: inline-block;
+}
+
+ul{
+  padding: 0;
+}
+
+ul a{
+  padding: 12px;
+}
+
+/*Form*/
+@import '../../shared/mixins',
+        '../../shared/reset',
+        '../../shared/about-light';
+
+
+body {
+  font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #404040;
+  background: #596778;
+}
+
+.sign-up {
+  position: relative;
+  margin: 50px auto;
+  width: 280px;
+  padding: 33px 25px 29px;
+  background: white;
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 5px;
+  @include box-shadow(0 1px 5px rgba(black, .25));
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: inherit;
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: 4px;
+  }
+
+  &:after {
+    bottom: 3px;
+    border-color: #dcdcdc;
+  }
+}
+
+.sign-up-title {
+  margin: -25px -25px 25px;
+  padding: 15px 25px;
+  line-height: 35px;
+  font-size: 26px;
+  font-weight: 300;
+  color: #aaa;
+  text-align: center;
+  text-shadow: 0 1px rgba(white, .75);
+  background: #f7f7f7;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: #c4e17f;
+    border-radius: 5px 5px 0 0;
+    @include linear-gradient(left,
+                             #c4e17f, #c4e17f 12.5%,
+                             #f7fdca 12.5%, #f7fdca 25%,
+                             #fecf71 25%, #fecf71 37.5%,
+                             #f0776c 37.5%, #f0776c 50%,
+                             #db9dbe 50%, #db9dbe 62.5%,
+                             #c49cde 62.5%, #c49cde 75%,
+                             #669ae1 75%, #669ae1 87.5%,
+                             #62c2e4 87.5%, #62c2e4);
+  }
+}
+
+input {
+  font-family: inherit;
+  color: inherit;
+  @include box-sizing(border-box);
+}
+
+.sign-up-input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 15px 2px;
+  font-size: 17px;
+  background: white;
+  border: 2px solid #ebebeb;
+  border-radius: 4px;
+  @include box-shadow(inset 0 -2px #ebebeb);
+
+  &:focus {
+    border-color: #62c2e4;
+    outline: none;
+    @include box-shadow(inset 0 -2px #62c2e4);
+  }
+
+  .lt-ie9 & { line-height: 48px; }
+}
+
+.sign-up-button {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 54px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(black, .25);
+  background: #f0776c;
+  border: 0;
+  border-bottom: 2px solid #d76b60;
+  border-radius: 5px;
+  cursor: pointer;
+  @include box-shadow(inset 0 -2px #d76b60);
+
+  &:active {
+    top: 1px;
+    outline: none;
+    @include box-shadow(none);
+  }
+}
+
+:-moz-placeholder { color: #ccc; font-weight: 300; }
+::-moz-placeholder { color: #ccc; opacity: 1; font-weight: 300; }
+::-webkit-input-placeholder { color: #ccc; font-weight: 300; }
+:-ms-input-placeholder { color: #ccc; font-weight: 300; }
+
+.formpage{
+  background-color: black;
+
+}
+
+.sign-up{
+  margin-top: -20px;
+}
